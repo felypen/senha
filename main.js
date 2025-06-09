@@ -4,4 +4,4 @@ numeroSenha.textContent = 5;
 
 const botoes = document.querySelector(".parametro-senha_botao");
 
-console.log 
+console.log(botoes);
