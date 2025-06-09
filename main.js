@@ -11,11 +11,26 @@ botoes[0].onclick = aumentarTamanho;
 console.log(botoes);
 
 function diminuirTamanho(){
-tamanhoSenha = tamanhoSenha - 1;
+if (tamanhoSenha < 1){
+    tamanhoSenha = tamanhoSenha - 1;
+}
 numeroSenha.textContent = tamanhoSenha
 }
 
+
 function aumentarTamanho(){
-tamanhoSenha = tamanhoSenha - 1;
+if (tamanhoSenha < 20){
+    tamanhoSenha = tamanhoSenha + 1;
+}
 numeroSenha.textContent = tamanhoSenha
+}
+
+const campoSenha + document.querySelector("#campo-senha");
+
+const letrasMaiusculas = "ABCDEFGHIJKLMNOPQRSTUVWXYZ" ;
+
+function geraSenha(){
+    let numeroAleatorio = Math.random()*letrasMaiusculas.length;
+    numeroAleatorio = Math.floor(numeroAleatorio);
+    console.log(letrasMaiusculas[numeroAleatorio]);
 }
