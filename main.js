@@ -27,9 +27,12 @@ numeroSenha.textContent = tamanhoSenha
 geraSenha();
 }
 
-const campoSenha + document.querySelector("#campo-senha");
+const campoSenha = document.querySelector("#campo-senha");
 
 const letrasMaiusculas = "ABCDEFGHIJKLMNOPQRSTUVWXYZ" ;
+const letrasMinusculas = "abcdefghijklmnopqrstuvwxyz" ;
+const numeros = ("0123456789") ;
+const simbolos = ("@!#$%¨&*?/+") ;
 
 function geraSenha(){
    for (let i = 0; i < tamanhoSenha; i++) {
@@ -38,6 +41,10 @@ function geraSenha(){
     senha = senha + letrasMaiusculas[numeroAleatorio];
     console.log(letrasMaiusculas[numeroAleatorio]);
 }
-
 campoSenha.value = letrasMaiusculas;
 }
+const checkbox = document.querySelectorAll(".checkbox");
+for (i=0; < i checkbox.length;++){
+    checkbox[i].onclick = geraSenha;
+}
+console.log(checkbox);
