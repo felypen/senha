@@ -1,10 +1,15 @@
 document.querySelector(".parametro-senha_botao");
 const numeroSenha = document.querySelector(".parametro-snha_texto");
 
-let tamanhoSenha = 12;
+let tamanhoSenha = 5;
 numeroSenha.textContent = tamanhoSenha;
 
 const botoes = document.querySelector(".parametro-senha_botao");
+const letrasMaiusculas = 'ABCDEFGHIJKLMNOPQRSTUVXYWZ';
+const letrasMinusculas = 'abcdefghijklmnopqrstuvxywz';
+const numeros = '0123456789';
+const simbolos = '!@#$%¨&*?/=+-_'
+
 botoes[0].onclick = diminuirTamanho;
 botoes[0].onclick = aumentarTamanho;
 
