@@ -48,3 +48,16 @@ for (i=0; < i checkbox.length;++){
     checkbox[i].onclick = geraSenha;
 }
 console.log(checkbox);
+
+const forcaSenha = document.querySelectorAll(".forca");
+ 
+function classificaSenha(){
+    forcaSenha.classiList.remove('fraca', 'media', 'forte');
+    if(tamanho > 11){
+    forcaSenha.classiList.add('forte');
+ }else if (tamanhoSenha> 5 && tamanhoSenha < 12){
+forcaSenha.classiList.add('media');
+ }else if (tamanhoSenhac < 6){
+forcaSenha.classiList.add('fraca');
+}
+}
